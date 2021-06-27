@@ -8,7 +8,7 @@ public class ReadConfig {
       private static Properties properties;
 
     static {
-        String path="config.properties";
+        String path= "configuration.properties";
         try{
             // FileInputStream will open the file
             FileInputStream input=new FileInputStream(path);

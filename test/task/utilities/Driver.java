@@ -31,10 +31,14 @@ public class Driver {
             }
         }
 
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
         return driver;
     }
+    /**
+     * This method will close all open browsers of current WebDriver object and initialize it as null
+     */
+    public static void quitDriver(){
+        getDriver().quit();
+        driver = null;
 
-}
+}}
